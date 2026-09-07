@@ -3,7 +3,7 @@
   var nav = document.getElementById("site-nav");
   if (!toggle || !nav) return;
 
-  var links = nav.querySelectorAll('a[href^="#"]');
+  var links = nav.querySelectorAll("a");
 
   function setOpen(open) {
     toggle.setAttribute("aria-expanded", open ? "true" : "false");
@@ -42,7 +42,7 @@
         });
       });
     },
-    { rootMargin: "-35% 0px -55% 0px", threshold: 0 }
+    { rootMargin: "-28% 0px -60% 0px", threshold: 0 }
   );
 
   sections.forEach(function (section) {
