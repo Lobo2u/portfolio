@@ -199,6 +199,17 @@ body.nav-open .nav-toggle-bar::after {
   color: var(--red);
 }
 
+.site-nav .btn-black,
+.site-nav .btn-black:hover,
+.site-nav .btn-black.is-active {
+  color: #fff;
+  background: var(--ink);
+}
+
+.site-nav .btn-black:hover {
+  background: #2a2a2a;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -781,6 +792,11 @@ body.nav-open .site-nav a {
   background: #fff;
 }
 
+.scroll-x {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .did-grid {
   display: grid;
   gap: 2rem;
@@ -1350,6 +1366,12 @@ body.nav-open .site-nav a {
 
   .flow-pill {
     flex: 1;
+  }
+}
+
+@media (max-width: 759px) {
+  .scroll-x img {
+    min-width: 40rem;
   }
 }
 
