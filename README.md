@@ -1,14 +1,12 @@
-# Eunsoo Jo (Lobo) — Portfolio
+# JO EUNSOO — Data & AI Portfolio
 
-Responsive personal portfolio for **Eunsoo Jo (Lobo)**, an AI / Computer Vision developer.
+Pencil 포트폴리오 PDF(`portfolio-1440.pdf`)의 편집 레이아웃을 반응형 HTML/CSS/JS로 옮긴 정적 사이트입니다.
 
-Live site: [https://lobo2u.github.io/portfolio/](https://lobo2u.github.io/portfolio/)
+Live: [https://lobo2u.github.io/portfolio/](https://lobo2u.github.io/portfolio/)
 
-This is a single-page static site (HTML, CSS, and a small JS file). The PDF is no longer the main experience — it is available only as an optional download.
+PDF iframe이 아니라 실제 웹페이지입니다. 크림 배경, 검은 타이포, 빨간 악센트, 다크 Clasq 밴드, 케이스 스터디 다이어그램은 PDF에서 추출한 정적 에셋을 사용합니다.
 
 ## Open locally
-
-Serve the folder (needed for clean relative assets):
 
 ```bash
 python3 -m http.server 8080
@@ -16,30 +14,27 @@ python3 -m http.server 8080
 
 Then visit `http://localhost:8080`.
 
-You can also open `index.html` directly in a browser.
-
 ## GitHub Pages
 
 Settings → Pages → Deploy from a branch → `main` / `/` (root).
 
-The published URL is `https://lobo2u.github.io/portfolio/`.
+Published URL: `https://lobo2u.github.io/portfolio/`.
 
 ## What’s on the page
 
-- **About** — industrial CV/AI work and a shift into LLM / RAG / local LLM systems
-- **Experience** — high-level public summaries only (no employer source code)
-- **Projects** — public GitHub repositories with working links
-- **Now** — LoboDoc (validation-level description) and a local LLM lab
-- **Contact** — `mailto:` email, GitHub, optional PDF download
+- **Hero / Profile** — Data to Working Systems, skill rows
+- **Selected Works** — Clasq, KHNP, 37.5 SmartCare, PANASIA, RAPHAS
+- **Other Projects / Experience / Stack**
+- **Contact footer** — email, GitHub, blog, [Download PDF](portfolio-1440.pdf)
 
-Navigation uses in-page anchors with smooth scroll. On small screens, the header menu toggles open and closes after a section is chosen.
+Company work is described at the same public level as the PDF. The only project repository link is the public Clasq repo already contributed to.
 
 ## Files
 
 | File | Description |
 | --- | --- |
 | `index.html` | Portfolio page |
-| `css/styles.css` | Responsive layout and theme |
+| `css/styles.css` | Pencil-matched layout and theme |
 | `js/main.js` | Mobile nav and active-section highlighting |
-| `portfolio-1440.pdf` | Optional downloadable PDF snapshot |
-| `.gitignore` | Local ignore rules |
+| `assets/` | Screenshots and diagrams extracted from the PDF |
+| `portfolio-1440.pdf` | Downloadable Pencil snapshot |
