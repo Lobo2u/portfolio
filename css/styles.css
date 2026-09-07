@@ -187,27 +187,22 @@ body.nav-open .nav-toggle-bar::after {
   gap: 1.5rem;
 }
 
-.site-nav a {
+.site-nav a:not(.btn) {
   color: var(--ink);
   text-decoration: none;
   font-size: 0.92rem;
   font-weight: 500;
 }
 
-.site-nav a:hover,
-.site-nav a.is-active {
+.site-nav a:not(.btn):hover,
+.site-nav a:not(.btn).is-active {
   color: var(--red);
 }
 
-.site-nav .btn-black,
-.site-nav .btn-black:hover,
-.site-nav .btn-black.is-active {
+.site-nav .btn-black {
   color: #fff;
-  background: var(--ink);
-}
-
-.site-nav .btn-black:hover {
-  background: #2a2a2a;
+  background: #111;
+  min-width: 6.4rem;
 }
 
 .btn {
@@ -261,9 +256,14 @@ body.nav-open .site-nav {
   gap: 0.15rem;
 }
 
-body.nav-open .site-nav a {
+body.nav-open .site-nav a:not(.btn) {
   padding: 0.9rem 0.2rem;
   font-size: 1.05rem;
+}
+
+body.nav-open .site-nav .btn-black {
+  margin-top: 0.45rem;
+  width: 100%;
 }
 
 .hero {
@@ -1274,6 +1274,11 @@ body.nav-open .site-nav a {
 
   .site-nav {
     display: flex;
+  }
+
+  .site-nav a:not(.btn) {
+    padding: 0.45rem 0.7rem;
+    font-size: 0.95rem;
   }
 
   .hero-top,
